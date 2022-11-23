@@ -1,0 +1,74 @@
+<script>
+    // lesson 31
+    /*
+    var person = {
+        name : 'John',
+        age : 31,
+        favColor : 'blue',
+    }
+    var book = {title:'Harry Potter', id:1}
+
+    var x = person.name;
+    var y = person['age'];
+    var z = book.title.length;
+    console.log(x)
+    console.log(y)
+    console.log(z)
+    */
+
+    // lesson 32
+    /*
+    function person(name, age, color){
+        this.name = name,
+        this.age = age,
+        this.favColor = color
+    }   
+    function kopiMix(gula, kopi, cream)
+    {
+        this.gula = gula
+        this.kopi = kopi
+        this.cream = cream
+    }
+
+    // instance object using new
+    var kopiSaya = new kopiMix('banyak','banyak','sedikit')
+    var kopiKamu = new kopiMix('sedikit','banyak','banyak')
+    document.write("Kopi saya Gula nya :"+kopiSaya.gula+"<br/>");
+    document.write("Kopi kamu Gula nya :"+kopiKamu.gula+"<br/>");
+*/
+
+// lesson 33
+/*
+    var simba = {
+        category : 'lion',
+        gender : 'male'
+    }
+    var v = simba.category
+    console.log(v)
+    */
+//    lesson 34
+    function person(name, age, color){
+        this.name = name,
+        this.age = age,
+        this.favColor = color,
+        this.changeName = function changeName(name){
+            this.name = name
+        }
+        this.changeAge = function changeAge(age){
+            this.age = age
+        }
+        this.changeFavColor = function changeFavColor(color){
+            this.favColor = color
+        }
+    }
+    var p = new person('John', 30, 'blue');
+    console.log(p.name)
+    console.log(p.age)
+    console.log(p.favColor)
+    p.changeName('Asep')
+    p.changeAge(32)
+    p.changeFavColor('Black')
+    console.log(p.name)
+    console.log(p.age)
+    console.log(p.favColor)
+</script>

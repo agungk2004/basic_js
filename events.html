@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+    </div>
+    <input type="text" id="toUpperCase" onchange="change()">
+    <button id="date">date</button>
+    <button onclick="show()">click me</button>
+    <div onclick="">
+        <p><button onclick=""></button></p>
+    </div>
+    <script>
+
+            var x = document.getElementById('date')
+            x.onclick = function(){
+                var y = document.getElementById('demo');
+                y.innerHTML = '<h1>'+Date()+'<h1>'
+            }
+            function show()
+            {
+                alert ('Hello Asep');
+            }
+            function change(){
+                var y = document.getElementById('toUpperCase')
+                y.value  = y.value.toUpperCase();
+            }
+    </script>
+</body>
+</html>
